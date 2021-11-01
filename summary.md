@@ -57,17 +57,17 @@ These could be topics for our next meeting.
 	3. Can we decide on these points _without_ deciding on which programming language to use?
 
 - Can we agree on a base API?
-	0. What is the smallest API that makes sense as a starting point?
-	1. What is a _variable_ in this API? How to create a variable? Ideally we need to not make any assumptions about how the variables are represented internally in solvers.
-	2. What is a constraint? Are there 'base' constraints? MiniZinc assumes there are no base constraints, and asks the solvers to give info on how to rewrite. 
-	2. What does _remove_ a constraint mean?
-	3. Do we want to have _assumptions_? Here by assumption is meant a set of atomic constraints (e.g., X >= 3), which is given to the solver, and we expect the solver to report a solution that satisfies the given assumptions. There is a connection between adding and removing constraints and assumptions.
-	4. Do we want to require solvers to produce a _cores_, i.e., a subset of the assumptions which in combination with the underlying model lead to infeasibility? Solvers that do not support core extraction could simply return all the assumptions in case of unsatisfiability.
-	5. Choice points may be interesting, i.e., after the user defines a 'choice point', the user can revert the solver state back to a given choice point.
-	6. How is this API different from MiniZinc Python? Is it complementary? Do we want to do more or less than MiniZinc, or perhaps different things?
-	7. Maybe can start out as an API that wraps around a text-based format?
-	8. Does the API also take care of the state of the solver? This should be the case if we would like to achieve incrementality.
-	9. How to address intermediate solutions?
+	1. What is the smallest API that makes sense as a starting point?
+	2. What is a _variable_ in this API? How to create a variable? Ideally we need to not make any assumptions about how the variables are represented internally in solvers.
+	3. What is a constraint? Are there 'base' constraints? MiniZinc assumes there are no base constraints, and asks the solvers to give info on how to rewrite. 
+	4. What does _remove_ a constraint mean?
+	5. Do we want to have _assumptions_? Here by assumption is meant a set of atomic constraints (e.g., X >= 3), which is given to the solver, and we expect the solver to report a solution that satisfies the given assumptions. There is a connection between adding and removing constraints and assumptions.
+	6. Do we want to require solvers to produce a _cores_, i.e., a subset of the assumptions which in combination with the underlying model lead to infeasibility? Solvers that do not support core extraction could simply return all the assumptions in case of unsatisfiability.
+	7. Choice points may be interesting, i.e., after the user defines a 'choice point', the user can revert the solver state back to a given choice point.
+	8. How is this API different from MiniZinc Python? Is it complementary? Do we want to do more or less than MiniZinc, or perhaps different things?
+	9. Maybe can start out as an API that wraps around a text-based format?
+	10. Does the API also take care of the state of the solver? This should be the case if we would like to achieve incrementality.
+	11. How to address intermediate solutions?
 
 # Random
 
