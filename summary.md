@@ -36,6 +36,7 @@ We need to:
 - Scenario 1: Online scheduling where we would like to add and remove tasks (variables and constraints) on the go without needing to restart from scratch.
 - Scenario 2: Model checking or abstraction refinement problems where the algorithms solves an approximation, and then modifies it depending on the model (TODO expand with more details).
 - Scenario 3: Industry users may like to have an easier time writing their own algorithms on top of solvers.
+- Scenario 4: Re-optimising after distruptions.
 
 ## API Functionality
 
